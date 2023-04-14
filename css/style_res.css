@@ -1,0 +1,75 @@
+.moabi_manu,.icon_bars{
+    display: none;
+}
+
+@media screen and (max-width:768px) {   
+    .nav{
+        display: none;
+    }
+    .icon_bars{
+        background-color: #f9683a;
+        display: inline-block;
+        color: #fff;
+        padding: 10px;
+        
+    }
+    .moabi_manu{
+        top: 100%;
+        left: 0;
+        display: block;
+        position: absolute;
+        width: 100%;
+        padding:20px;
+        background-color: #17161C;
+        color: #ffff;
+        font-weight: bolder;
+    }
+    .moabi_manu li a{
+        font-weight: bold;
+        padding:7px 10px;
+        display: block;
+        font-weight:400;
+        text-transform: capitalize;
+        font-size: 15px;
+        
+        
+    }
+    .moabi_manu li a:hover{
+         color: #ff2828;
+    }
+    
+}
+
+
+
+@media (min-width: 768px) and (max-width: 1024px){
+    .baner_img{
+        height: 650px;
+        margin-top: 0;
+    }
+}
+
+
+@media (min-width: 320px) and (max-width: 736px)
+{
+    .baner_img{
+        height: 350px;
+        text-align: center;
+    }
+    .main_baner h1{
+        text-align: center;
+        font-size: 25px;
+        font-family: "Roboto", sans-serif;
+    }
+    .main_baner h3{
+        text-align: center;
+        font-weight: 400;
+        font-size: 15px;
+        letter-spacing: 2.5px;
+        margin-top: 20px;
+        font-family: "Roboto", sans-serif;
+    }
+    .main_baner a{
+       display: none;
+    }
+}
