@@ -11,6 +11,7 @@
     <link rel="shortcut icon" href="img/ficon.png">
     <link rel="stylesheet" href="css/bootstrap-icons.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
     <link rel="stylesheet" href="css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="./css/style_res.css">
@@ -117,25 +118,25 @@
         <div class="col-12 col-md-12">
           <div class="main_text d-xxl-flex d-lg-flex  d-md-flex text-center text-light align-items-center justify-content-evenly">
             <div class="text_bg   ">
-              <h2>
+              <h2 id="num1">
                 50
               </h2>
               <span class="fst-italic">Awards Won</span>
             </div>
             <div class="text_bg">
-              <h2>
+              <h2 id="num2">
                 3968
               </h2>
               <span class="fst-italic">Line of Code</span>
             </div>
             <div class="text_bg">
-              <h2>
+              <h2 id="num3">
                 50
               </h2>
               <span class="fst-italic">Clients Worldwide</span>
             </div>
             <div class="text_bg">
-              <h2>
+              <h2 id="num4">
                   86
               </h2>
               <span class="fst-italic">Projects Delivered</span>
@@ -149,7 +150,7 @@
   <!--=======================================================
                     Portfolio
 ========================================================== -->
-<section class="Portfolio">
+<section class="Portfolio spacer">
   <div class="container">
     <div class="row">
       <div class="col-md-12  col-12 ">
@@ -157,91 +158,45 @@
           <h2 class="mb-2">Portfolio</h2>
         </div>
       </div>
-   
-        <div class="filter-option  portfolio-list text-center">
-          <ul>
-            <li class="col-xl-2 col-lg-4 col-md-6 col-12  mt-5  ">
-              <a href="" class= "filter active">All-Services</a>  
-            </li>
-            <li class="col-xl-2 col-lg-4 col-md-6 col-12 mt-5">
-              <a href="">Website</a> 
-            </li>
-            <li class= "col-xl-2 col-lg-4 col-md-6 col-12 mt-5">
-              <a href="">Template</a> 
-            </li>
-            <li class="col-xl-2 col-lg-4 col-md-6 col-12 mt-5">
-              <a href="">Agency</a> 
-            </li>
-          </ul>
+        <ul class="button-group filter-button-group text-center d-flex align-items-center justify-content-center py-3 ">
+          <li data-filter="*"  class="active rounded-pill pro_buton px-4">All-Services</li>
+          <li data-filter=".metal" class="rounded-pill pro_buton px-4" >Website</li>
+          <li data-filter=".transition" class="rounded-pill pro_buton px-4">Template</li>
+          <li data-filter=".alkali, .alkaline-earthi" class="rounded-pill pro_buton px-4">Agency</li> 
+        </ul>
+        <div class=" grid row m-0 g-0 filter_img">
+          <div class="col-md-4 metal">
+                <img src="./img/portfolio-img01 (1).jpg" alt="">
+                <a class="layer" href="./img/portfolio-img01 (1).jpg" rel="group-2">
+                </a>
+          </div>
+          <div class="col-md-4 transition alkali alkaline-earthi">
+              <img src="./img/portfolio-img02.jpg" alt="">
+              <a class="layer" href="./img/portfolio-img02.jpg" rel="group-2">   
+              </a>
+          </div>
+          <div class="col-md-4 alkali alkaline-earthi">
+              <img src="./img/portfolio-img03.jpg" alt="">
+              <a class="layer" href="./img/portfolio-img03.jpg" rel="group-2">
+              </a>
+          </div>
+          <div class="col-md-4 transition alkali alkaline-earthi">
+             <img src="./img/portfolio-img04.jpg" alt="">
+             <a class="layer" href="./img/portfolio-img04.jpg" rel="group-2">
+             </a>
+          </div>  
+          <div class="col-md-4 metal">
+              <img src="./img/portfolio-img05.jpg" alt="">
+              <a class="layer" href="./img/portfolio-img05.jpg" rel="group-2">    
+              </a>
+          </div>
+          <div class="col-md-4 transition">
+            <img src="./img/portfolio-img06.jpg" alt="">
+            <a class="layer" href="./img/portfolio-img06.jpg" rel="group-2">    
+            </a>
+          </div>  
+        </div>
 
-        </div>
-   
-      <div class="col-lg-4 col-md-6 col-12">
-        <div class="project position-relative ">
-            <div class="img">
-              <img src="img/portfolio-img01 (1).jpg" alt="">
-              <div class="text_hover_prot ">
-                <p>BRANDING</p>
-                <a href="">Branding Company Projects</a>
-              </div>
-            </div>
-        </div>
-      </div>
-      <div class="col-lg-4 col-md-6 col-12">
-        <div class="project">
-            <div class="img">
-              <img src="img/portfolio-img05.jpg" alt="">
-              <div class="text_hover_prot ">
-                <p>BRANDING</p>
-                <a href="">Branding Company Projects</a>
-              </div>
-            </div>
-        </div>
-      </div>
-      <div class="col-lg-4 col-md-6 col-12">
-        <div class="project">
-            <div class="img">
-              <img src="img/portfolio-img02.jpg" alt="">
-              <div class="text_hover_prot">
-                <p>BRANDING</p>
-                <a href="">Branding Company Projects</a>
-              </div>
-            </div>
-        </div>
-      </div>
-      <div class="col-lg-4 col-md-6 col-12">
-        <div class="project">
-            <div class="img">
-              <img src="img/portfolio-img03.jpg" alt="">
-              <div class="text_hover_prot">
-                <p>BRANDING</p>
-                <a href="">Branding Company Projects</a>
-              </div>
-            </div>
-        </div>
-      </div>
-      <div class="col-lg-4 col-md-6 col-12">
-        <div class="project">
-            <div class="img">
-              <img src="img/portfolio-img04.jpg" alt="">
-              <div class="text_hover_prot ">
-                <p>BRANDING</p>
-                <a href="">Branding Company Projects</a>
-              </div>
-            </div>
-        </div>
-      </div>
-      <div class="col-lg-4 col-md-6 col-sm-6">
-        <div class="project">
-            <div class="img">
-              <img src="img/portfolio-img06.jpg" alt="">
-              <div class="text_hover_prot">
-                <p>BRANDING</p>
-                <a href="">Branding Company Projects</a>
-              </div>
-            </div>
-        </div>
-      </div>
     </div>
   </div>
 </section>
@@ -249,7 +204,7 @@
   <!--=======================================================
                     BOlg
 ========================================================== -->
-    <section class="bolg"> 
+    <section class="bolg spacer"> 
       <div class="container">
         <div class="tital_bolg text-center mb-4">
           <h2>Our Blog</h2>
@@ -301,7 +256,7 @@
    <!--=======================================================
                     Email
     ====================================================== -->
-    <section class=" email">
+    <section class=" email spacer">
     <div class="container ">
       <div class= "row">
           <div class="col-12 col-lg-12">
@@ -346,7 +301,7 @@
   <!--=====================================================
                     footer
   ====================================================== -->
-    <footer class="footer_bg">
+    <footer class="footer_bg spacer">
       <div class="container">
         <div class="row">
           <div class="col-sm-6 col-lg-3" >
@@ -386,7 +341,7 @@
       </div>
       
     </footer>
-    <div class="copy_right ">
+    <div class="copy_right spacer">
       <div class="container">
         <div class="row d-flex">
           <div class="col-xs-6  col-md-6  col-7">
@@ -406,6 +361,9 @@
 </div>
     <script src="js/jquery-3.6.3.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="./js/countMe.min.js"></script>
+    <script src="./js/isotope-docs.min.js "></script>
+    <script src="./js/jquery.fancybox.min.js"></script>
     <script src="js/script.js"></script>
   
 </body>
