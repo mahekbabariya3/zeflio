@@ -20,8 +20,14 @@ body{
     padding-top:190px;
     padding-bottom: 190px;
   }
+.row{
+    margin: 0px !important;
+    
+}
 header{
-    position: absolute;
+        
+    position: fixed;
+    background-color:#17161c;
     top: 0;
     left: 0;
     width: 100%;
@@ -32,8 +38,33 @@ img{
     width: 100%;
     object-fit: cover;
 }
+.spacer{
+    padding-top:100px;
+    padding-bottom: 100px;
+  }
+  
+  #scroll_up{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 99;
+  }
+  
+  #scroll_up i{
+    background-color:var(--but-color);
+    box-shadow: 0 0 2px #fff;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    font-size: 20px;
+    color: #ffff;
+  }
+  #scroll_up:hover{
+    background-color: #c62526;
+  }
 .nav-pills .nav-link.active, .nav-pills .show>.nav-link{
-    color:#f9683a;
+    color:#ffff;
     background: none;
 }
 .nav-pills .nav-link{
@@ -42,8 +73,15 @@ img{
     padding-top: 25px;
     padding-left: 35px;
     text-transform: uppercase; 
+    transition: .3s;
     font-family: var(--font-family);
 }
+.nav-pills li a:hover
+{
+    color: var(--but-color);
+}
+                                 
+
 .logo_1 img{
     object-fit: contain;
 }
@@ -217,23 +255,18 @@ img{
     left: 20px;
     right: 20px;
     bottom: 10px;
-    /* transform: scale(0);
+    transform: scale(0);
     transition: .3s;
-    background-color: rgba(0, 0, 0, 0.6); */
+    background-color: rgba(0, 0, 0, 0.6);
 }
-/* .gride_item .layer:hover{
+.gride_item .layer:hover{
     transform: scale(1);
-} */
-/*
-.titale_prot h2{
-    font-family: var(--font-family);
-    color: var(--but-color);
-    font-size: 42px;
-    font-weight: 600;
-} */
+}
+
 /* .filter-option{
     margin-bottom: 30px;
 }
+
 .filter-option ul li{
     display: inline-block;
 }
@@ -448,4 +481,9 @@ img{
     font-size: 14px;
     font-family: var(--font-family);
 
+}
+.try
+{
+    height: 200px;
+    background-color: #cd3f3f;
 }

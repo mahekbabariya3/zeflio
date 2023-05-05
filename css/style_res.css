@@ -47,6 +47,9 @@
         height: 650px;
         margin-top: 0;
     }
+    .tital_bolg p{
+        padding: 0 0 !important;
+    }
 }
 
 
@@ -72,4 +75,6 @@
     .main_baner a{
        display: none;
     }
+
 }
+

@@ -6,7 +6,6 @@ $(document).ready(function(){
 
     });         
 
-
     window.onload = ()=>{
         // $(selector).countMe(delay,speed)
         $("#num1").countMe(40,65);
