@@ -16,6 +16,10 @@ body{
     font-size: 14px;
     color: #707070;
 }
+.spacer{
+    padding-top:190px;
+    padding-bottom: 190px;
+  }
 header{
     position: absolute;
     top: 0;
@@ -82,7 +86,6 @@ img{
 
 .main_about{
     background-color: var(--background-color);
-    padding: 100px 0 100px;
 }
 .row{
     margin-right: -15px;
@@ -180,20 +183,55 @@ img{
 
                 /* protfolio */
 .Portfolio{
-    padding: 100px 0 100px;
     background-color:#17181d;
 }
-.titale_prot{
-    margin-bottom: 80px;
+
+.filter_img img
+{
+    width: 100%;
 }
+.filter-button-group li.active,
+.filter-button-group li:hover{
+    background-color: var(--but-color);
+}
+
+.filter_img > div
+{
+    padding: 0 12px;
+    margin-top: 24px;
+}
+.pro_buton{
+    background-color: var(--background-color );
+    outline: none;
+    border: none;
+    margin-right: 20px;
+    padding: 10px;
+    cursor: pointer;
+}
+.gride_item{
+    position: relative;
+}
+.layer{
+    position:absolute;
+    top: 10px;
+    left: 20px;
+    right: 20px;
+    bottom: 10px;
+    /* transform: scale(0);
+    transition: .3s;
+    background-color: rgba(0, 0, 0, 0.6); */
+}
+/* .gride_item .layer:hover{
+    transform: scale(1);
+} */
+/*
 .titale_prot h2{
     font-family: var(--font-family);
     color: var(--but-color);
     font-size: 42px;
     font-weight: 600;
-    /* margin-bottom: 10px; */
-}
-.filter-option{
+} */
+/* .filter-option{
     margin-bottom: 30px;
 }
 .filter-option ul li{
@@ -208,11 +246,10 @@ img{
     font-weight: 600;
     font-size: 16px;
     text-transform: capitalize;
-    /* display: inline-block; */
     margin:0 5px;
     background-color: #1f2025;
-}
-.filter-option .filter.active{
+} */
+/* .filter-option .filter.active{
     color: #fff;
     border: 1px solid #f9683a;
     background-color: var(--but-color);
@@ -222,13 +259,9 @@ img{
     position: relative;
     margin-top: 30px;
     overflow: hidden;
-}
-.project img{
-    overflow: hidden;
-}
-.text_hover_prot{
-    padding: 0 0 10px   ;
-}
+} */
+
+
 .project::before{
     content: '';
     opacity: 0;
@@ -239,7 +272,6 @@ img{
     height: 90%;
     left: 5%;
     transition: .5s;
-    /* top: 30px; */
     text-align: center;
 }
 .project .text_hover_prot{
@@ -249,7 +281,7 @@ img{
     top: 40%;
     text-align: center;
 }
-.text_hover_prot{
+/* .text_hover_prot{
     opacity: 0;
     transition: 0.5s;
     top: 30%;
@@ -271,14 +303,13 @@ img{
 
     opacity: 1;
     top: 40%;
-}
+} */
 
 
 
                 /* bolg */
 .bolg{
     background-color: var(--background-color);
-    padding: 100PX 0 100px;
 }
 .tital_bolg h2{
     color: var(--but-color);
@@ -326,7 +357,6 @@ img{
                 /* Email   */
 .email{
     background-color:#1c1d22;
-    padding: 100px 0 100px;
 }
 .titale_text_emali h2{
     color: #f9683a;
@@ -377,7 +407,6 @@ img{
 
             /* footer   */
 .footer_bg{
-    padding: 100px 0 100px ;
     background-color: #17161c;
 
 }
