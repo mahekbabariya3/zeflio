@@ -242,6 +242,7 @@ img{
     background-color: var(--background-color );
     outline: none;
     border: none;
+    color: #ececec;
     margin-right: 20px;
     padding: 10px;
     cursor: pointer;
